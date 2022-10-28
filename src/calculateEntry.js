@@ -15,9 +15,9 @@ function countEntrants(entrants = []) {
   return { child, adult, senior };
 }
 
-function calculateEntry(entrants) {
+function calculateEntry(entrants = {}) {
   // seu código  aqui
-  if (!entrants || Object.entries(entrants).length < 1) return 0;
+  if (Object.entries(entrants).length < 1) return 0;
   const visitas = countEntrants(entrants);
   const arrVisitas = Object.keys(visitas);
   return arrVisitas.reduce((acc, curr) => acc + (visitas[curr] * prices[curr]), 0);

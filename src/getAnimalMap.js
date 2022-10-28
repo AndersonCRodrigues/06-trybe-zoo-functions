@@ -43,7 +43,7 @@ function getAnimalMap(options) {
 module.exports = getAnimalMap;
 
 // console.log(getAnimalMap());
-// console.log(getAnimalMap({ includeNames: true }));
+console.log(getAnimalMap({ includeNames: true }));
 // console.log(getAnimalMap({ includeNames: true, sorted: true }));
 // console.log(getAnimalMap({ includeNames: true, sex: 'female' }));
 // console.log(getAnimalMap({ includeNames: true, sex: 'female', sorted: true }));
